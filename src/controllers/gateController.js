@@ -5,7 +5,7 @@ export function getFiles(req, res){
     console.log(files)
     if (!files) return res.sendStatus(400)
     const token = uuid()
-    const year = randomNumber(2023, 10000)
+    const year = randomNumber(2023, 2500)
     res.status(201).send(
         {message: `Seu envio foi feito para o ano de ${year}. \n\n 
                    Volte ou autorize alguém à retornar 
